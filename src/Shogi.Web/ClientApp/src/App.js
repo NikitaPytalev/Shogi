@@ -6,6 +6,7 @@ import { FetchData } from './components/FetchData';
 import { Counter } from './components/Counter';
 import Lobby from './components/Lobby/Lobby'
 import './custom.css'
+import 'bulma/css/bulma.css';
 
 export default class App extends Component {
   static displayName = App.name;

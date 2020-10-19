@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { HubConnectionBuilder } from '@microsoft/signalr';
-import Players from './Players';
+import ProfileList from '../ProfileList/ProfileList';
+import Chat from '../Chat/Chat';
 
 const Lobby = () => {
   const [connection, setConnection] = useState(null);
@@ -35,7 +36,25 @@ const Lobby = () => {
 
   return (
     <div>
-      <Players players={players} />
+      <section>
+        <div classNmae="container">
+          <p>Lobby</p>
+        </div>
+      </section>
+      <section>
+        <div classNmae="container">
+          <div className = "columns">
+            <div className="column">
+              <div className="Box">
+                <ProfileList players={players} />
+              </div>
+            </div>
+            <div className="column">
+              <Chat />
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
