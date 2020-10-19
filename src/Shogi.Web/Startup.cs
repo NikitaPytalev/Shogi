@@ -55,7 +55,7 @@ namespace Shogi.Web
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller}/{action=Index}/{id?}");
-                endpoints.MapHub<LobbyHub>("/lobby");
+                endpoints.MapHub<LobbyHub>("/hubs/lobby");
             });
 
             app.UseSpa(spa =>
