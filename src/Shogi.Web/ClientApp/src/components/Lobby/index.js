@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { HubConnectionBuilder } from '@microsoft/signalr';
-import ProfileList from '../ProfileList/ProfileList';
-import Chat from '../Chat/Chat';
+import ProfileList from '../ProfileList';
+import Chat from '../Chat';
 
 const Lobby = () => {
   const [connection, setConnection] = useState(null);

@@ -1,8 +1,8 @@
 import React from 'react';
 import { Route, Switch } from 'react-router';
-import Error from './components/Error/Error';
-import Lobby from './components/Lobby/Lobby';
-import Menu from './components/Menu/Menu';
+import Error from './components/Error';
+import Lobby from './components/Lobby';
+import Menu from './components/Menu';
 
 const App = () => {
   return (
