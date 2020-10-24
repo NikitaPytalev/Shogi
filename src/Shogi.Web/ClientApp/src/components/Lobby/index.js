@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { HubConnectionBuilder } from '@microsoft/signalr';
-import ProfileList from '../ProfileList';
+import ProfileList from '../UserList';
 import Chat from '../Chat';
 
 const Lobby = () => {
@@ -37,12 +37,12 @@ const Lobby = () => {
   return (
     <div>
       <section>
-        <div classNmae="container">
+        <div className="container">
           <p>Lobby</p>
         </div>
       </section>
       <section>
-        <div classNmae="container">
+        <div className="container">
           <div className = "columns">
             <div className="column">
               <div className="Box">
